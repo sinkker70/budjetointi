@@ -1,28 +1,3 @@
-# Tähän pitäisi tulla koodia: ...
-# Vaihe 2: Mukautettavien budjettikohteiden lisääminen
-# Laajenna ohjelmaa siten, että käyttäjä voi lisätä omia budjettikohteita.
-# Ohjelman tulee pyytää käyttäjää antamaan uuden kuluerän nimi ja siihen budjetoitu summa.
-# Nämä käyttäjän lisäämät budjettikohteet tallennetaan samaan rakenteeseen, johon myös ennakkoon määritellyt kohteet on tallennettu.
-# monirivinen kursori oli: Ctrl + Alt + nuoli alaspäin
-
-# Vaihe 3: Budjettikohteiden muokkaaminen
-# Laajenna ohjelmaa siten, että käyttäjä voi muokata aiemmin syöttämiään budjettikohteita.
-# Anna käyttäjälle mahdollisuus valita, mitä budjettikohdetta hän haluaa muokata, ja syöttää uusi summa.
-
-budjetti = {
-    "Vuokra": 0, 
-    "Vakuutukset": 0,
-    "Kouluruokailu": 0, 
-    "Sähkö": 0, 
-    "Liikkuminen": 0
-}
-
-print("Hei, anna budjetti-kohteet ja lasken kuukauden kokonaisbudjetin!")
-print("---------------------")
-
-for key, value in budjetti.items():
-    budjetti[key] = int(input(f"Anna {key}: "))
-
 # kokonaisbudjetin laskenta ja tulostus
 def tulostaBudjetti(budjetti): 
     
@@ -45,6 +20,20 @@ def muokkaa(budjetti):
     syote = input("Mitä haluat muokata?")
     budjetti[syote] = int(input(f"Anna {syote}: "))
 
+# sanakirjan alustaminen
+budjetti = {
+    "Vuokra": 0, 
+    "Vakuutukset": 0,
+    "Kouluruokailu": 0, 
+    "Sähkö": 0, 
+    "Liikkuminen": 0
+}
+
+print("Hei, anna budjettikohteet ja lasken kuukauden kokonaisbudjetin!")
+print("---------------------")
+
+for key, value in budjetti.items():
+    budjetti[key] = int(input(f"Anna {key}: "))
 
 print("-------")
 while True: 
