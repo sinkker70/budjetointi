@@ -20,7 +20,7 @@ def muokkaa(budjetti):
     syote = input("Mitä haluat muokata?")
     budjetti[syote] = int(input(f"Anna {syote}: "))
 
-# sanakirjan alustaminen
+# sanakirjan alustaminen 
 budjetti = {
     "Vuokra": 0, 
     "Vakuutukset": 0,
