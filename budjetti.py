@@ -56,5 +56,5 @@ while True:
             print('Tuntematon komento')
             break
 
-
+#Todo: tehtäväski tulee sovelluksen jatkon ideointi
     
